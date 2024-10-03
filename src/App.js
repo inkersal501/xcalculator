@@ -11,7 +11,7 @@ function App() {
         // eslint-disable-next-line
         setResult(eval(value));
       }else{
-        setResult("");
+        setResult("Error");
       }
     }else if(val === "C"){
       setValue("");
