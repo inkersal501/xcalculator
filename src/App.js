@@ -7,8 +7,12 @@ function App() {
   const [result, setResult] = useState("");
   const handleClick = (val) => {
     if(val === "="){
-      // eslint-disable-next-line
-      setResult(eval(value));
+      if(value !==""){
+        // eslint-disable-next-line
+        setResult(eval(value));
+      }else{
+        setResult("");
+      }
     }else if(val === "C"){
       setValue("");
       setResult("");
